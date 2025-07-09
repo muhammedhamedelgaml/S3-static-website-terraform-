@@ -22,7 +22,7 @@ This project provisions an S3 bucket to host a static website using Terraform.
 
 #### 🚀 Usage
 
-1. **Initialize Terraform**
+1. **Initialize Backend**
    ```bash
    terraform init
 
