@@ -20,7 +20,9 @@ This project provisions an S3 bucket to host a static website using Terraform.
   
  - **AWS Credentials**: Or Edit file and add your creds:
   ```bash
-  vim ~/.aws/credentials
+   vim ~/.aws/credentials
+
+
 
 
 ## 🚀 Usage
