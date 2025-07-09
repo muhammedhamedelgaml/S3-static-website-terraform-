@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Enhanced Static Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #333;
+      --primary: #2b6cb0;
+      --accent: #2c5282;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--accent);
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      padding: 0.75em 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4em 1em;
+      text-align: center;
+      background: linear-gradient(to right, #e0f0ff, #d9e2ec);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 1em auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em 1em;
+      background-color: #fff;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      max-width: 300px;
+      margin: 1em;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.9rem;
+      color: #666;
+      background: #f0f0f0;
+    }
+
+    /* Scroll-to-top button */
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #topBtn:hover {
+      background: var(--accent);
+    }
+
+    /* Dark mode toggle with checkbox */
+    .dark-toggle {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+    }
+
+    .dark-toggle input {
+      display: none;
+    }
+
+    .dark-toggle label {
+      cursor: pointer;
+      background: #333;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+
+    /* Dark mode styles */
+    input:checked ~ * {
+      --bg: #1a202c;
+      --text: #e2e8f0;
+      --primary: #63b3ed;
+      --accent: #4299e1;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dark-toggle">
+    <input type="checkbox" id="darkmode-toggle">
+    <label for="darkmode-toggle">Toggle Dark Mode</label>
+  </div>
+
+  <header>
+    <h1>My Static Website</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to My Site</h1>
+    <p>This static site is hosted on S3 and built with just HTML and CSS. No frameworks. No JavaScript. Fully responsive and elegant.</p>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>⚡ Fast</h3>
+      <p>Blazing fast loading via Amazon S3 static hosting.</p>
+    </div>
+    <div class="feature">
+      <h3>🧱 Simple</h3>
+      <p>Just one HTML file. No builds. No dependencies.</p>
+    </div>
+    <div class="feature">
+      <h3>🌙 Dark Mode</h3>
+      <p>Toggle light/dark mode with pure CSS. No JS.</p>
+    </div>
+  </section>
+
+  <footer id="about">
+    <p>&copy; 2025 My Static Site ITI-CU-System Admin Track By  Muhammmed Hamed <a href="https://aws.amazon.com/s3/" target="_blank">Amazon S3</a>.</p>
+  </footer>
+
+  <a href="#home" id="topBtn">↑ Top</a>
+</body>
+</html>
+
