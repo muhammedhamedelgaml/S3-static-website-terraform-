@@ -19,18 +19,19 @@ This project provisions an S3 bucket to host a static website using Terraform.
   aws configure
 
 
+
 #### 🚀 Usage
 
-- **Initialize Terraform**
+1. **Initialize Terraform**
    ```bash
    terraform init
 
-- **Terraform plan**
+2. **Terraform plan**
    ```bash
    terraform plan   
 
 
--  **Terraform apply**
+3. **Terraform apply**
    ```bash
    terraform apply 
 
