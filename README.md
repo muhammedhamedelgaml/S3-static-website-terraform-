@@ -1,5 +1,8 @@
 # 🚀 AWS S3 Static Website with Terraform
 
+![Website](Screenshot from 2025-07-15 02-11-56.png)
+
+
 This project provisions an S3 bucket to host a static website using Terraform. 
 
 ## 📁 Files
